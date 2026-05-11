@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =====================================================================
+   Novela design system — tokens lifted from the original ThemeForest
+   theme's SCSS (item 9380450). Do not change these values without also
+   updating the corresponding entries in tailwind.config.ts.
+   ===================================================================== */
+
+@layer base {
+  :root {
+    --color-accent: #bf9456;
+    --color-accent-rgb: 191, 148, 86;
+    --color-heading: #333333;
+    --color-body: #515151;
+    --color-muted: #6b6b6b;
+    --color-rule: #cccccc;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--color-body);
+    -webkit-font-smoothing: antialiased;
+    background-color: #ffffff;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Ovo", Georgia, serif;
+    color: var(--color-heading);
+    font-weight: 400;
+  }
+
+  a {
+    color: var(--color-heading);
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+
+  a:hover {
+    color: var(--color-accent);
+  }
+
+  ::selection {
+    background: var(--color-accent);
+    color: #fff;
+  }
+  ::-moz-selection {
+    background: var(--color-accent);
+    color: #fff;
+  }
+}
+
+@layer components {
+  /* Block-section rhythm — every major section breathes the same way */
+  .block-section {
+    position: relative;
+    background-color: #ffffff;
+    padding: 80px 0;
+  }
+
+  /* Centered uppercase eyebrow above section headings */
+  .eyebrow {
+    display: inline-block;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--color-muted);
+    margin-bottom: 16px;
+  }
+
+  .section-heading {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .section-heading h2 {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+
+  /* Subtitle in italic Ovo, sized for hero subheads + pull-quotes */
+  .subtitle {
+    font-family: "Ovo", serif;
+    font-style: italic;
+    font-size: 21px;
+    color: var(--color-muted);
+  }
+
+  /* The signature Novela button: 2px border, transparent fill, gold on hover */
+  .btn-novela {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    border: 2px solid var(--color-heading);
+    background: transparent;
+    color: #000;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 85%;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .btn-novela:hover {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: #fff;
+  }
+
+  /* Hero-only variant: white border/text over a dark photo */
+  .btn-novela-hero {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    border: 2px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 85%;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .btn-novela-hero:hover {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: #ffffff;
+  }
+
+  /* Drop-cap — the floated gold serif first-letter that marks every
+     "long-form" paragraph in the original theme. Apply class to the <p>. */
+  .drop-cap::first-letter {
+    float: left;
+    font-family: "Ovo", serif;
+    color: var(--color-accent);
+    font-size: 3.3em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1em;
+    padding-top: 0;
+    padding-right: 12px;
+    padding-left: 3px;
+  }
+
+  @media (max-width: 479px) {
+    .drop-cap::first-letter {
+      float: none;
+      font-size: 1.6em;
+      padding-right: 4px;
+    }
+  }
+
+  /* The "characters" (chapters) heading uses extreme letter-spacing
+     over a dark photo. Lifted directly from .characters-heading. */
+  .characters-heading {
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.625em;
+    text-align: center;
+    font-size: 32px;
+  }
+
+  /* Gradient mask — used on hero + chapters bg images */
+  .hero-mask {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+  }
+
+  .gradient-mask {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+  }
+}
