@@ -95,10 +95,12 @@
     color: var(--color-muted);
   }
 
-  /* The signature Novela button: 2px border, transparent fill, gold on hover */
+  /* The signature Novela button — values lifted verbatim from
+     theme SCSS _shortcodes.scss .button { … } */
   .btn-novela {
     display: inline-block;
     padding: 0.8em 1.5em;
+    margin-bottom: 1em;
     border: 2px solid var(--color-heading);
     background: transparent;
     color: #000;
@@ -107,9 +109,9 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    line-height: 1;
+    line-height: normal;
     cursor: pointer;
-    transition: all 0.15s ease;
+    transition: 0.1s;
   }
 
   .btn-novela:hover {
@@ -118,10 +120,12 @@
     color: #fff;
   }
 
-  /* Hero-only variant: white border/text over a dark photo */
+  /* Hero-only variant — per theme master.scss .hero .button { },
+     hover changes BORDER only, background stays transparent */
   .btn-novela-hero {
     display: inline-block;
     padding: 0.8em 1.5em;
+    margin-bottom: 1em;
     border: 2px solid #ffffff;
     background: transparent;
     color: #ffffff;
@@ -130,13 +134,12 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    line-height: 1;
+    line-height: normal;
     cursor: pointer;
-    transition: all 0.15s ease;
+    transition: 0.1s;
   }
 
   .btn-novela-hero:hover {
-    background: var(--color-accent);
     border-color: var(--color-accent);
     color: #ffffff;
   }

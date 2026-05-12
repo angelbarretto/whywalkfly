@@ -6,7 +6,7 @@ const NAV_LINKS = [
   { label: "Chapters", href: "#chapters" },
   { label: "Author", href: "#author" },
   { label: "Reviews", href: "#reviews" },
-  { label: "Read Free", href: "#read-free" },
+  { label: "Buy the Book", href: "#buy" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -87,7 +87,7 @@ export default function Header() {
           </div>
 
           <div className="px-10 pt-8">
-            <p className="eyebrow">Joaquim Barretto</p>
+            <p className="eyebrow">Jo Barretto</p>
             <h2 className="font-serif text-3xl text-heading">Why Walk? Fly!</h2>
           </div>
 

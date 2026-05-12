@@ -1,11 +1,14 @@
+import { BUY_CHECKOUT_URL } from "@/config/links";
+
 export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative w-full min-h-screen pt-[140px] pb-16 bg-cover bg-center"
+      className="relative w-full pb-16 bg-cover bg-center"
       style={{
-        backgroundImage:
-          "linear-gradient(rgba(20,20,30,0.35), rgba(0,0,0,0.85)), url('/hero-bg.jpg')",
+        minHeight: "700px",
+        paddingTop: "70px",
+        backgroundImage: "url('/hero-bg.jpg')",
         backgroundColor: "#0f172a",
       }}
     >
@@ -30,8 +33,8 @@ export default function Hero() {
               <a href="#chapters" className="btn-novela-hero">
                 Read Free Chapters
               </a>
-              <a href="#author" className="btn-novela-hero">
-                Meet the Author
+              <a href={BUY_CHECKOUT_URL} className="btn-novela-hero">
+                Buy the Book — $10.10
               </a>
             </div>
           </div>

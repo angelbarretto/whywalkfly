@@ -23,7 +23,7 @@ export default function About() {
             more?
           </p>
 
-          <a href="#read-free" className="btn-novela">
+          <a href="#chapters" className="btn-novela">
             Read the First Chapter
           </a>
         </div>
@@ -44,7 +44,7 @@ export default function About() {
                 "100% of any proceeds from this book go directly to our
                 global humanitarian work."
               </p>
-              <p className="eyebrow mb-0">— Joaquim Barretto</p>
+              <p className="eyebrow mb-0">— Jo Barretto</p>
             </div>
           </div>
         </div>

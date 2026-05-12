@@ -36,7 +36,7 @@ export default function Footer() {
         </div>
 
         <p>
-          &copy; {new Date().getFullYear()} Why Walk? Fly! &middot; Joaquim Barretto
+          &copy; {new Date().getFullYear()} Why Walk? Fly! &middot; Jo Barretto
         </p>
         <p className="mt-2 italic text-muted">
           100% of any proceeds go to our global humanitarian work.

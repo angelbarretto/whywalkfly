@@ -22,7 +22,7 @@ export default function Contact() {
       <div className="container max-w-3xl">
         <div className="section-heading">
           <p className="eyebrow">Get in touch</p>
-          <h2 className="font-serif">Write to Joaquim &amp; Tuula.</h2>
+          <h2 className="font-serif">Write to Jo &amp; Tuula.</h2>
         </div>
 
         {sent ? (

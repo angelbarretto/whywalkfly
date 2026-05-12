@@ -16,14 +16,14 @@ export default function Author() {
         <div className="px-8 md:px-20 py-12 md:py-20 max-w-2xl mx-auto md:mx-0 order-2 md:order-2">
           <p className="eyebrow">The Author</p>
           <h2 className="font-serif text-[36px] md:text-[42px] leading-tight mb-4">
-            Joaquim Barretto
+            Jo Barretto
           </h2>
           <p className="subtitle mb-10">
             Husband, father, accidental adventurer.
           </p>
 
           <p className="drop-cap mb-6">
-            Joaquim and his Finnish wife Tuula have spent over forty years on
+            Jo and his Finnish wife Tuula have spent over forty years on
             humanitarian missions — serving impoverished children in India,
             business leaders in boardrooms, and broken hearts in between.
           </p>
@@ -36,7 +36,7 @@ export default function Author() {
           </p>
 
           <a href="#contact" className="btn-novela">
-            Write to Joaquim
+            Write to Jo
           </a>
         </div>
       </div>
