@@ -39,17 +39,15 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right — book cover */}
+          {/* Right — book cover (transparent PNG, no wrapper box) */}
           <div className="flex justify-center md:justify-end">
-            <div
-              className="relative w-[260px] sm:w-[320px] md:w-[360px] aspect-[2/3] rounded-sm shadow-2xl transform rotate-[6deg] hover:rotate-0 transition-transform duration-500"
+            <img
+              src="/book-cover.png"
+              alt="Why Walk? Fly! book cover"
+              className="w-[260px] sm:w-[320px] md:w-[400px] h-auto transform rotate-[6deg] hover:rotate-0 transition-transform duration-500"
               style={{
-                backgroundImage: "url('/book-cover.jpg')",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundColor: "#1a1a1a",
+                filter: "drop-shadow(0 25px 40px rgba(0, 0, 0, 0.5))",
               }}
-              aria-label="Why Walk? Fly! book cover"
             />
           </div>
         </div>
