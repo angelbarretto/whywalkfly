@@ -3,7 +3,7 @@ export default function About() {
     <section id="about" className="relative block-section overflow-hidden">
       <div className="grid md:grid-cols-2 gap-0 items-stretch min-h-[600px]">
         {/* LEFT — book information with drop-cap */}
-        <div className="px-8 md:px-20 py-12 md:py-20 max-w-2xl mx-auto md:mx-0">
+        <div className="px-8 md:px-20 py-12 md:py-20 max-w-2xl mx-auto md:mx-0 flex flex-col justify-center">
           <p className="eyebrow">About the Book</p>
           <h2 className="font-serif text-[36px] md:text-[42px] leading-tight mb-8">
             Stories that defy explanation.
@@ -23,29 +23,31 @@ export default function About() {
             more?
           </p>
 
-          <a href="#chapters" className="btn-novela">
+          <a href="#chapters" className="btn-novela self-start">
             Read the First Chapter
           </a>
         </div>
 
-        {/* RIGHT — atmospheric background with floating pull-quote */}
+        {/* RIGHT — image fills column; pull-quote card floats top, overlapping left edge */}
         <div
-          className="relative min-h-[400px] md:min-h-full bg-cover bg-center"
+          className="relative min-h-[500px] md:min-h-full bg-cover bg-center"
           style={{
             backgroundImage: "url('/about-bg.jpg')",
             backgroundColor: "#2a2a2a",
           }}
         >
-          <div className="gradient-mask" />
-
-          <div className="relative z-10 flex items-center justify-center h-full p-8 md:p-12">
-            <div className="bg-white px-8 md:px-12 py-10 md:py-14 max-w-md text-center shadow-xl">
-              <p className="font-serif italic text-[20px] leading-relaxed text-muted mb-4">
-                "100% of any proceeds from this book go directly to our
-                global humanitarian work."
-              </p>
-              <p className="eyebrow mb-0">— Jo Barretto</p>
-            </div>
+          <div
+            className="absolute z-10 bg-white shadow-xl text-center
+                       px-8 md:px-12 py-10 md:py-14
+                       top-12 md:top-16
+                       left-6 md:-left-16
+                       right-6 md:right-16"
+          >
+            <p className="font-serif italic text-[20px] leading-relaxed text-muted mb-4">
+              "100% of any proceeds from this book go directly to our
+              global humanitarian work."
+            </p>
+            <p className="eyebrow mb-0">— Jo Barretto</p>
           </div>
         </div>
       </div>
