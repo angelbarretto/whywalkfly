@@ -28,21 +28,16 @@ export default function About() {
           </a>
         </div>
 
-        {/* RIGHT — image fills column; pull-quote card floats top, overlapping left edge */}
+        {/* RIGHT — book-read: image fills column. Card sits top-left at width 70% per theme SCSS */}
         <div
-          className="relative min-h-[500px] md:min-h-full bg-cover bg-center"
+          className="relative min-h-[500px] md:min-h-full bg-cover bg-center text-center"
           style={{
             backgroundImage: "url('/about-bg.jpg')",
             backgroundColor: "#2a2a2a",
           }}
         >
-          <div
-            className="absolute z-10 bg-white shadow-xl text-center
-                       px-8 md:px-12 py-10 md:py-14
-                       top-12 md:top-16
-                       left-6 md:-left-16
-                       right-6 md:right-16"
-          >
+          {/* book-read-inner: position relative, margin-top 40px, width 70%, padding 40px */}
+          <div className="relative z-10 bg-white p-10 mt-10 w-[90%] md:w-[70%] shadow-xl">
             <p className="font-serif italic text-[20px] leading-relaxed text-muted mb-4">
               "100% of any proceeds from this book go directly to our
               global humanitarian work."
